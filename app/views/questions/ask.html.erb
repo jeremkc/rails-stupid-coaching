@@ -1,0 +1,15 @@
+<h1> Stupid Coaching </h1>
+
+<%# Le comportement natif d’une balise <form> consiste à générer la requête HTTP
+définie par les attributs method et action. %>
+<%# L’attribut method contient le verbe HTTP (GET par défaut).
+L’attribut action contient l’url de la requête qu’elle déclenche à l’envoi. %>
+
+<p> ask your coach anything </p>
+<%# action mene vers la page une fois qu'on clique sur notre form/ %>
+<div class="container">
+<form action="/answer" data-turbo="false">
+  <input type="text" name="question">
+  <input class="btn-primary" type="submit" value="Ask!">
+</form>
+</div>
